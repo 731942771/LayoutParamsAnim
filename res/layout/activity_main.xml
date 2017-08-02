@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="bottom按钮" />
+
+        <ListView
+            android:id="@+id/bottomlv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" />
+    </LinearLayout>
+
+    <com.cuiweiyou.view.ScrollerLinearLyt
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff9900"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="顶部按钮" />
+
+        <ListView
+            android:id="@+id/toplv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" />
+    </com.cuiweiyou.view.ScrollerLinearLyt>
+    
+</RelativeLayout>
